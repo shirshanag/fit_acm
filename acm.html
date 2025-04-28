@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACM Student Chapter - Future Institute of Technology Boral</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for sidebar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #2563eb; /* blue-600 */
+      border-radius: 4px;
+    }
+    /* Smooth fade-in animation */
+    .fade-in {
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="font-['Roboto'] bg-gray-50 text-gray-800 flex min-h-screen">
+  <!-- Sidebar Navigation -->
+  <aside class="fixed top-0 left-0 h-full w-64 bg-blue-700 text-white flex flex-col">
+    <div class="flex items-center space-x-3 px-6 py-6 border-b border-blue-600">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/ACM_logo.svg" alt="ACM Logo" class="h-10 w-auto" />
+      <span class="text-2xl font-bold">ACM Student Chapter</span>
+    </div>
+    <nav class="flex flex-col flex-grow overflow-y-auto px-6 py-4 space-y-4">
+      <a href="#hero" class="py-2 px-3 rounded hover:bg-blue-600 transition-colors">Home</a>
+      <a href="#about" class="py-2 px-3 rounded hover:bg-blue-600 transition-colors">About</a>
+      <a href="#events" class="py-2 px-3 rounded hover:bg-blue-600 transition-colors">Events</a>
+      <a href="#membership" class="py-2 px-3 rounded hover:bg-blue-600 transition-colors">Membership</a>
+      <a href="#member-details" class="py-2 px-3 rounded hover:bg-blue-600 transition-colors">Member Details</a>
+    </nav>
+    <footer class="px-6 py-4 border-t border-blue-600 text-sm text-blue-300">
+      &copy; 2024 ACM Student Chapter<br />Future Institute of Technology Boral
+    </footer>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-grow ml-64 p-8">
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg shadow-lg text-white p-16 mb-12 fade-in">
+      <h1 class="text-5xl font-extrabold mb-4 max-w-3xl">Welcome to the ACM Student Chapter</h1>
+      <p class="text-xl max-w-2xl">Future Institute of Technology Boral - Empowering Students in Computing and Technology</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-5xl mx-auto mb-12 fade-in">
+      <h2 class="text-3xl font-bold mb-6 text-blue-700 border-b-4 border-blue-600 inline-block">About Us</h2>
+      <p class="text-gray-700 leading-relaxed">
+        The ACM Student Chapter at Future Institute of Technology Boral is dedicated to fostering a community of passionate students interested in computing and technology. We organize workshops, seminars, coding competitions, and networking events to help students grow their skills and connect with industry professionals.
+      </p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="max-w-5xl mx-auto mb-12 bg-white rounded-lg shadow p-8 fade-in">
+      <h2 class="text-3xl font-bold mb-6 text-blue-700 border-b-4 border-blue-600 inline-block">Upcoming Events</h2>
+      <ul class="space-y-6 text-gray-700">
+        <li class="border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Tech Talk: AI and Machine Learning</h3>
+          <p>Date: July 15, 2024</p>
+          <p>Join us for an insightful talk on the latest trends in AI and Machine Learning by industry experts.</p>
+        </li>
+        <li class="border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Coding Workshop: Web Development Basics</h3>
+          <p>Date: August 5, 2024</p>
+          <p>Hands-on workshop to learn the fundamentals of web development including HTML, CSS, and JavaScript.</p>
+        </li>
+        <li class="border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Annual Hackathon 2024</h3>
+          <p>Date: September 20-22, 2024</p>
+          <p>Participate in our annual hackathon to showcase your coding skills and win exciting prizes.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="max-w-5xl mx-auto mb-12 fade-in">
+      <h2 class="text-3xl font-bold mb-6 text-blue-700 border-b-4 border-blue-600 inline-block">Membership</h2>
+      <p class="text-gray-700 leading-relaxed">
+        <!-- Empty as requested -->
+      </p>
+    </section>
+
+    <!-- Member Details Section -->
+    <section id="member-details" class="max-w-5xl mx-auto mb-12 bg-white rounded-lg shadow p-8 fade-in">
+      <h2 class="text-3xl font-bold mb-6 text-blue-700 border-b-4 border-blue-600 inline-block">Member Details</h2>
+      <!-- Empty for now -->
+    </section>
+  </main>
+</body>
+</html>
